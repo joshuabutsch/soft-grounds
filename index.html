@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Soft Grounds – Methoden</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&display=swap">
+<style>
+/* Layout: drei Themen untereinander, je drei Methoden mit Video oben und A3-Blatt darunter */
+:root { --bg:#ffffff; --fg:#141414; --muted:#6e6e6e; --line:#dcdcdc; --red:#c91d1d; --font:"Hanken Grotesk", system-ui, sans-serif; }
+body { margin:0;  background:var(--bg); color:var(--fg); font-family:var(--font); padding-block:28px 56px; padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); }
+main { max-width:1200px; margin:0 auto; display:grid; gap:56px; }
+header { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; color:var(--muted); font-size:14px; border-bottom:1px solid var(--line); padding-bottom:10px; }
+section { display:grid; gap:20px; }
+.head { display:flex; align-items:baseline; gap:16px; flex-wrap:wrap; }
+h2 { margin:0; background:var(--red); color:#fff; font-weight:600; font-size:clamp(24px,4vw,36px); padding:2px 12px; text-transform:uppercase; }
+h2::after { content:"."; }
+.head p { margin:0; font-size:clamp(18px,2.4vw,24px); text-wrap:balance; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px; }
+article { display:grid; gap:10px; min-width:0; align-content:start; }
+video, img { width:100%; max-width:100%; display:block; border:1px solid var(--line); background:#fff; }
+.sheet:focus-visible { outline:2px solid var(--red); outline-offset:2px; }
+h3 { margin:0; font-weight:400; font-size:18px; }
+#single { max-width:900px; margin:0 auto; display:grid; gap:16px; }
+#single video { border:none; }
+#single h3 { font-size:22px; }
+.back { color:var(--red); text-decoration:none; font-size:16px; }
+.back:focus-visible { outline:2px solid var(--red); }
+h3 span { color:var(--red); font-variant-numeric:tabular-nums; margin-right:6px; }
+.note { color:var(--muted); font-size:14px; margin:0; }
+</style>
+</head><body>
+<div id="single" hidden><a class="back" href="#">← Alle Methoden</a><div id="slot"></div></div>
+<main id="all">
+<header><span>Soft Grounds — New Narratives</span><span>Methoden · Joshua Butsch, Alexander Osterloh</span></header>
+<p class="note">Je Methode das Video (s pendelt 0 → 1 → 0) und das A3-Blatt. Blatt antippen öffnet es groß.</p>
+<section><div class="head"><h2>Seamless</h2><p>Eine Naht trennt nicht, sie verbindet.</p></div><div class="grid"><article id="seamless-ueberlappen"><video src="v/Seamless_01_Ueberlappen_Video.mp4" muted loop playsinline controls preload="metadata"></video>
+<a class="sheet" href="s/Seamless_01_Ueberlappen_A3.jpg" target="_blank"><img src="s/Seamless_01_Ueberlappen_A3.jpg" alt="A3-Blatt Überlappen" loading="lazy"></a>
+<h3><span>01</span> Überlappen</h3></article><article id="seamless-verzahnen"><video src="v/Seamless_02_Verzahnen_Video.mp4" muted loop playsinline controls preload="metadata"></video>
+<a class="sheet" href="s/Seamless_02_Verzahnen_A3.jpg" target="_blank"><img src="s/Seamless_02_Verzahnen_A3.jpg" alt="A3-Blatt Verzahnen" loading="lazy"></a>
+<h3><span>02</span> Verzahnen</h3></article><article id="seamless-verlauf"><video src="v/Seamless_03_Verlauf_Video.mp4" muted loop playsinline controls preload="metadata"></video>
+<a class="sheet" href="s/Seamless_03_Verlauf_A3.jpg" target="_blank"><img src="s/Seamless_03_Verlauf_A3.jpg" alt="A3-Blatt Verlauf" loading="lazy"></a>
+<h3><span>03</span> Verlauf</h3></article></div></section><section><div class="head"><h2>Meaningful</h2><p>Ein Material hat keine Bedeutung. Es bekommt eine.</p></div><div class="grid"><article id="meaningful-abpausen"><video src="v/Meaningful_01_Abpausen_Video.mp4" muted loop playsinline controls preload="metadata"></video>
+<a class="sheet" href="s/Meaningful_01_Abpausen_A3.jpg" target="_blank"><img src="s/Meaningful_01_Abpausen_A3.jpg" alt="A3-Blatt Abpausen" loading="lazy"></a>
+<h3><span>01</span> Abpausen</h3></article><article id="meaningful-versetzen"><video src="v/Meaningful_02_Versetzen_Video.mp4" muted loop playsinline controls preload="metadata"></video>
+<a class="sheet" href="s/Meaningful_02_Versetzen_A3.jpg" target="_blank"><img src="s/Meaningful_02_Versetzen_A3.jpg" alt="A3-Blatt Versetzen" loading="lazy"></a>
+<h3><span>02</span> Versetzen</h3></article><article id="meaningful-vergroessern"><video src="v/Meaningful_03_Vergroessern_Video.mp4" muted loop playsinline controls preload="metadata"></video>
+<a class="sheet" href="s/Meaningful_03_Vergroessern_A3.jpg" target="_blank"><img src="s/Meaningful_03_Vergroessern_A3.jpg" alt="A3-Blatt Vergrößern" loading="lazy"></a>
+<h3><span>03</span> Vergrößern</h3></article></div></section><section><div class="head"><h2>Timeless</h2><p>Das Objekt bleibt. Der Nutzer wechselt.</p></div><div class="grid"><article id="timeless-reduzieren"><video src="v/Timeless_01_Reduzieren_Video.mp4" muted loop playsinline controls preload="metadata"></video>
+<a class="sheet" href="s/Timeless_01_Reduzieren_A3.jpg" target="_blank"><img src="s/Timeless_01_Reduzieren_A3.jpg" alt="A3-Blatt Reduzieren" loading="lazy"></a>
+<h3><span>01</span> Reduzieren</h3></article><article id="timeless-reparieren"><video src="v/Timeless_02_Reparieren_Video.mp4" muted loop playsinline controls preload="metadata"></video>
+<a class="sheet" href="s/Timeless_02_Reparieren_A3.jpg" target="_blank"><img src="s/Timeless_02_Reparieren_A3.jpg" alt="A3-Blatt Reparieren" loading="lazy"></a>
+<h3><span>02</span> Reparieren</h3></article><article id="timeless-altern-lassen"><video src="v/Timeless_03_Altern_lassen_Video.mp4" muted loop playsinline controls preload="metadata"></video>
+<a class="sheet" href="s/Timeless_03_Altern_lassen_A3.jpg" target="_blank"><img src="s/Timeless_03_Altern_lassen_A3.jpg" alt="A3-Blatt Altern lassen" loading="lazy"></a>
+<h3><span>03</span> Altern lassen</h3></article></div></section>
+</main>
+<script>
+function route(){
+  const id=location.hash.slice(1), single=document.getElementById('single'), all=document.getElementById('all'), slot=document.getElementById('slot');
+  const art=id && document.getElementById(id);
+  slot.innerHTML='';
+  if(art && art.tagName==='ARTICLE'){
+    const v=art.querySelector('video').cloneNode(); v.controls=true; v.muted=true; v.loop=true; v.autoplay=true; v.setAttribute('playsinline','');
+    const h=art.querySelector('h3').cloneNode(true);
+    const th=art.closest('section').querySelector('h2').textContent;
+    const p=document.createElement('p'); p.className='note'; p.textContent='Soft Grounds — New Narratives · '+th;
+    slot.append(p,v,h); single.hidden=false; all.hidden=true; window.scrollTo(0,0); v.play().catch(()=>{});
+  } else { single.hidden=true; all.hidden=false; }
+}
+addEventListener('hashchange',route); route();
+const vs=[...document.querySelectorAll('video')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.play().catch(()=>{}); } else e.target.pause(); }),{threshold:0.3});
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches) vs.forEach(v=>io.observe(v));
+</script>
+</body></html>
