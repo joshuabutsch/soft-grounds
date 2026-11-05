@@ -3,6 +3,7 @@
 <title>Soft Grounds – Methoden</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&display=swap">
 <style>
+[hidden]{display:none !important}
 /* Layout: drei Themen untereinander, je drei Methoden mit Video oben und A3-Blatt darunter */
 :root { --bg:#ffffff; --fg:#141414; --muted:#6e6e6e; --line:#dcdcdc; --red:#c91d1d; --font:"Hanken Grotesk", system-ui, sans-serif; }
 body { margin:0;  background:var(--bg); color:var(--fg); font-family:var(--font); padding-block:28px 56px; padding-left:max(16px, env(safe-area-inset-left, 0px)); padding-right:max(16px, env(safe-area-inset-right, 0px)); }
@@ -57,7 +58,7 @@ function route(){
   const art=id && document.getElementById(id);
   slot.innerHTML='';
   if(art && art.tagName==='ARTICLE'){
-    const v=art.querySelector('video').cloneNode(); v.controls=true; v.muted=true; v.loop=true; v.autoplay=true; v.setAttribute('playsinline','');
+    const v=art.querySelector('video').cloneNode(); v.controls=true; v.muted=true; v.loop=true; v.autoplay=true; v.preload="auto"; v.setAttribute('playsinline','');
     const h=art.querySelector('h3').cloneNode(true);
     const th=art.closest('section').querySelector('h2').textContent;
     const p=document.createElement('p'); p.className='note'; p.textContent='Soft Grounds — New Narratives · '+th;
